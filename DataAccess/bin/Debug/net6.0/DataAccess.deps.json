@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "DataAccess/1.0.0": {
         "dependencies": {
-          "Entities": "1.0.0",
+          "Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.Extensions.Configuration": "7.0.0",
           "Microsoft.Extensions.Configuration.Json": "7.0.0",
@@ -546,9 +546,9 @@
           }
         }
       },
-      "Entities/1.0.0": {
+      "Core/1.0.0": {
         "runtime": {
-          "Entities.dll": {}
+          "Core.dll": {}
         }
       }
     }
@@ -909,7 +909,7 @@
       "path": "system.windows.extensions/4.7.0",
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
-    "Entities/1.0.0": {
+    "Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

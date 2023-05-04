@@ -63,3 +63,5 @@ C:\Users\Rashad\source\repos\SocarProject\ConsoleUI\bin\Debug\net6.0\Microsoft.E
 C:\Users\Rashad\source\repos\SocarProject\ConsoleUI\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Users\Rashad\source\repos\SocarProject\ConsoleUI\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
 C:\Users\Rashad\source\repos\SocarProject\ConsoleUI\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Rashad\source\repos\SocarProject\ConsoleUI\bin\Debug\net6.0\Core.dll
+C:\Users\Rashad\source\repos\SocarProject\ConsoleUI\bin\Debug\net6.0\Core.pdb

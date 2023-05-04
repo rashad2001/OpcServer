@@ -888,14 +888,14 @@
           }
         }
       },
-      "Entities/1.0.0": {
+      "Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/Entities.dll": {}
+          "bin/placeholder/Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Entities.dll": {}
+          "bin/placeholder/Core.dll": {}
         }
       }
     }
@@ -2618,15 +2618,15 @@
         "version.txt"
       ]
     },
-    "Entities/1.0.0": {
+    "Core/1.0.0": {
       "type": "project",
-      "path": "../Entities/Entities.csproj",
-      "msbuildProject": "../Entities/Entities.csproj"
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Entities >= 1.0.0",
+      "Core >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.5",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.Configuration.Json >= 7.0.0",
@@ -2660,8 +2660,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Rashad\\source\\repos\\SocarProject\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\Rashad\\source\\repos\\SocarProject\\Entities\\Entities.csproj"
+            "C:\\Users\\Rashad\\source\\repos\\SocarProject\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\Rashad\\source\\repos\\SocarProject\\Core\\Core.csproj"
             }
           }
         }

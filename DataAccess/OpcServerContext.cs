@@ -1,4 +1,5 @@
-﻿using Entities;
+﻿
+using Core.Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -9,34 +10,30 @@ using System.Threading.Tasks;
 
 namespace DataAccess
 {
-    public class OpsServerContext : DbContext
+    public class OpcServerContext : DbContext
     {
 
         // for getting ConnectionString from JSON
        public static String get()
         {
-            var builder = new ConfigurationBuilder();
-            builder.AddJsonFile("C:\\Users\\Rashad\\source\\repos\\SocarProject\\WebApi\\appsettings.json");
+            var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("C:\\Users\\Rashad\\source\\repos\\SocarProject\\DataAccess\\dbsettings.json");
+          
             IConfiguration config = builder.Build();
             string connectionString = config.GetConnectionString("MySqlConnection");
             return connectionString;
         }
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)  
         {
-            modelBuilder.Entity<User>(entity =>
-            {
-                entity.HasKey(x => x.Id);
-                entity.Property(x => x.Name).IsRequired().HasColumnType("nvarchar(25)");
-                entity.Property(x => x.Email).IsRequired().HasColumnType("nvarchar(25)");
-
-            });
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(OpcServerContext).Assembly);
 
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySQL(OpsServerContext.get());
+            optionsBuilder.UseMySQL(OpcServerContext.get());
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<OperationClaim> OperationClaims { get; set; }
+        public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
     }
 }
