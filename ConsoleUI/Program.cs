@@ -9,13 +9,13 @@ createDb();
 
 static void createDb()
 {
-    using(var ctx = new OpcServerContext())
-    {
-        ctx.Database.EnsureCreated();
-
-        ctx.Users.Add(new User { Email = "rasad@azimov", Name = "Rashad", PasswordHash = Encoding.ASCII.GetBytes("sadasdasd"), PasswordSalt = Encoding.ASCII.GetBytes("asdasdasd") }) ;
+    //using(var ctx = new OpcServerContext())
+    //{
        
-        ctx.UserOperationClaims.Add(new UserOperationClaim { OperationClaimId = "15", UserId })
-        ctx.SaveChanges();
-    }
+
+    //    //ctx.Users.Add(new User { Email = "rasaaaaad@azimov", Name = "Rashad", PasswordHash = Encoding.ASCII.GetBytes("sadasdasd"), PasswordSalt = Encoding.ASCII.GetBytes("asdasdasd") }) ;
+
+    //    //ctx.UserOperationClaims.Add(new UserOperationClaim { OperationClaimId = 2, UserId = 1 });
+    //    ctx.SaveChanges();
+    //}
 }

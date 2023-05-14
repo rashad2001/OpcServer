@@ -13,9 +13,9 @@ namespace DataAccess.Configuration
     {
         public void Configure(EntityTypeBuilder<UserOperationClaim> builder)
         {
-           builder.HasKey(x => x.Id);
-           builder.Property(x => x.UserId).IsRequired().HasColumnType("nvarchar(15)");
-           builder.Property(x => x.OperationClaimId).IsRequired().HasColumnType("nvarchar(15)");
+            builder.HasKey(x => x.Id);
+            builder.Property(x => x.UserId).IsRequired().HasColumnType("int(15)");
+            builder.Property(x => x.OperationClaimId).IsRequired().HasColumnType("int(15)");
         }
     }
 }
